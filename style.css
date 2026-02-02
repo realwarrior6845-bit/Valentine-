@@ -6,7 +6,7 @@
 
 body {
   height: 100vh;
-  background: linear-gradient(#ffdee9, #ffc3d8);
+  background: #ffd6e8; /* light pink */
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
@@ -15,17 +15,21 @@ body {
 }
 
 .container {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 25px;
   text-align: center;
-  padding: 20px;
+  width: 90%;
+  max-width: 360px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   z-index: 2;
 }
 
 /* Main text */
-.title {
-  font-size: 36px;
-  margin-bottom: 10px;
+.title,
+.success-text {
+  color: #ff4d6d;
 }
-
 /* Big heart */
 .big-heart {
   font-size: 80px;
@@ -108,4 +112,5 @@ button {
     transform: translateY(110vh) rotate(360deg);
     opacity: 0;
   }
+
 }
